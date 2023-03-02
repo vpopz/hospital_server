@@ -99,7 +99,7 @@ app.put('/hospitals/:id', (req, res) => {
 
 
 //delete
-app.delete('/deleteData/:id', (req, res) => {
+app.delete('/hospitals/:id', (req, res) => {
   const id = req.params.id;
 
   //reading
