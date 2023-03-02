@@ -1,1 +1,23 @@
-{"hospitals":[{"name":"Kerala Institute of Medical Sciences","patient_num":300,"Location":"Anayara, Trivandrum "},{"Name of Hospital":"Ananthapuri Hospitals & Research Institute","Number Of patients":550,"Location":"Chacka, Trivandrum"},{"Name of Hospital":"Cosmopolitan Hospital","Number Of patients":360,"Location":"Pattom, Trivandrum"},{"Name of Hospital":"Sree Uthradom Thirunal Hospital","Number Of patients":276,"Location":"Pattom, Trivandrum"},{"Name of Hospital":"PRS Hospital","Number Of patients":300,"Location":" Karamana, Trivandrum"},null,null,null,{"name":"Test Hospital","patients":100,"location":"New York"},{"name":"Test Hospital 2","patients":400,"location":"New York"},{"name":"Test Hospital 3","patients":500,"location":"New York"},{"name":"Test Hospital 4","patients":500,"location":"New York"}]}
+{
+    "hospitals":[
+        {
+            "name":"KIMS",
+            "patient_num":300,
+            "Location":"Anayara"},
+        {
+            "name":"Ananthapuri",
+            "patient_num":550,
+            "Location":"Chacka"},
+        {
+            "name":"Cosmopolitan",
+            "patient_num":360,
+            "Location":"Pattom"},
+        {
+            "name":"SUT",
+            "patient_num":276,
+            "Location":"Pattom"},
+        {
+            "name":"PRS",
+            "patient_num":300,
+            "Location":" Karamana"}
+            ]}
