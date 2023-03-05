@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 const FILE_PATH = './data/hospitals.json';
 
 //GET
@@ -103,14 +104,15 @@ app.delete('/hospitals/:id', (req, res) => {
   const id = req.params.id;
 
   //reading
-  fs.readFile(FILE_PATH, 'utf8', (err, data) => {
+  fs.readFile(FILE_PATH, 'utf8', async (err, data) => {
     if (err) throw err;
 
     // Parsing
-    const hospital = JSON.parse(data);
+    const hospital = await JSON.parse(data);
 
     //selecting
-    const toDelete = hospital.find((item) => item.id === id);
+    const toDelete = await hospital.filter((item) => item.id === id);
+     //hospital= hospital.filter((item) => item.id != Id)
 
     if (!toDelete) {
       return res.status(404).send('Data not found');
